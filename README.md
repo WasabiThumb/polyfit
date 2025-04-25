@@ -23,22 +23,22 @@ with plenty of fluff.
 
 ## API
 ### Regression
-##### pf_err_t pf_fit(const pf_points_t *points, unsigned int order, double *coefficients)
+##### pf_err_t [pf_fit](https://github.com/WasabiThumb/polyfit/blob/8f04f3024ce8cfa7216a225d8cc5e7ee141e1d4d/include/polyfit.h#L98)(const pf_points_t *points, unsigned int order, double *coefficients)
 > Fits an N-order polynomial to a set of input points (see [point set abstraction](#point-set-abstraction)).
 
-##### pf_err_t pf_fit_easy(unsigned int count, const double *xs, const double *ys, unsigned int, double *coefficients)
+##### pf_err_t [pf_fit_easy](https://github.com/WasabiThumb/polyfit/blob/8f04f3024ce8cfa7216a225d8cc5e7ee141e1d4d/include/polyfit.h#L113)(unsigned int count, const double *xs, const double *ys, unsigned int, double *coefficients)
 > Fits an N-order polynomial to a set of input points.
 
 ### Error Handling
-##### const char *pf_strerror(pf_err_t code)
+##### const char *[pf_strerror](https://github.com/WasabiThumb/polyfit/blob/8f04f3024ce8cfa7216a225d8cc5e7ee141e1d4d/include/polyfit.h#L55)(pf_err_t code)
 > Returns a human-readable string describing a polyfit status code.
 
 ### Stringification
-##### size_t pf_strpoly(pf_len_t order, const double *coefficients, char *buf, size_t len)
+##### size_t [pf_strpoly](https://github.com/WasabiThumb/polyfit/blob/8f04f3024ce8cfa7216a225d8cc5e7ee141e1d4d/include/polyfit.h#L130)(pf_len_t order, const double *coefficients, char *buf, size_t len)
 > Writes into "buf" a string representing a polynomial.
 
 ### Evaluation
-##### double pf_eval(pf_len_t order, const double *coefficients, double x);
+##### double [pf_eval](https://github.com/WasabiThumb/polyfit/blob/8f04f3024ce8cfa7216a225d8cc5e7ee141e1d4d/include/polyfit.h#L142)(pf_len_t order, const double *coefficients, double x);
 > Computes the value of a polynomial expression for a given x
 
 ## Point set abstraction
