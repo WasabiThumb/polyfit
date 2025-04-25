@@ -1,0 +1,8 @@
+# CMake
+cmake-build-debug/
+**/cmake-build-debug/
+cmake-build-release/
+**/cmake-build-release/
+
+# IntelliJ IDEA
+.idea/
